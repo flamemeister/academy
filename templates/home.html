@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Home page</h1>
+    <p>Welcome to the room page. This is where you can find information about our rooms and services.</p>
+    <div>
+
+        <div>
+            {% for room in rooms %}
+                <div>
+                    <h5>{{room.id}} -- {{room.name}}</h5>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock content %}
