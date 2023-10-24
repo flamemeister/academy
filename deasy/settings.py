@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILESS_DIRS = [
+STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
