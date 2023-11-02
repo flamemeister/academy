@@ -2,7 +2,7 @@
 <header class="header header--loggedIn">
       <div class="container">
         <a href="{% url 'home' %}" class="header__logo">
-          <img src="assets/logo.svg" />
+          <img src="{% static 'images/logotype2.svg' %}" />
           <h1>D'Easy Academy</h1>
         </a>
         <form class="header__search" method="GET" action="{% url 'home' %}">
@@ -39,7 +39,7 @@
 
           <!-- Not Logged In -->
             <a href="{% url 'login' %}">
-              <img src="./assets/avatar.svg" />
+              <img src="{% static 'images/avatar.svg' %}" />
               <p>Login</p>
             </a>
 
