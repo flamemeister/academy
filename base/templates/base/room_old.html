@@ -1,7 +1,6 @@
 {% extends 'main.html' %}
 
 {% block content %}
-
 <style>
     .room-container{
         display:grid;
@@ -12,11 +11,10 @@
 <div class="room-container">
     <div>
 
-
 <h1>{{room.name}}</h1>
     <p>{{room.description}}</p>
 <div class="comment-wrapper">
-    <h3>Converstion</h3>
+    <h3>Беседа</h3>
     <hr>
 
     {% for message in room_messages %}
